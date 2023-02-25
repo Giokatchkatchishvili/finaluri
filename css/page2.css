@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+header {
+    width: 100%;
+    padding: 34px 38px 38px 113px;
+    background-color: #9EAEC5;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    
+    
+}
+
+ul {
+    display: flex;
+    gap: 47px;
+    
+    
+    
+}
+li a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #E3F6F6;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    
+    
+}
+
+
+
+header .img2 {
+    width: 30px;
+    
+}
+
+li a:hover {
+    color: #623932;
+    cursor: pointer;
+    
+}
+
+li {
+    list-style: none;
+    position: relative;
+    
+}
+
+li a::before {
+    content: "";
+    background-color: #623932;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+}
+
+li a:hover::before {
+    content: "";
+    background-color: #623932;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.fa-bars,
+.fa-rectangle-xmark {
+    display: none;
+}
+
+.section1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -3.1px;
+
+}
+section {
+    width: 100%;
+    position: relative;
+}
+
+.sectionimg {
+    width: 100%;
+    margin-top: 105px;
+    
+}
+
+.secsec {
+    width: 70%;
+    position: absolute;
+    padding: 35px 38px 28px 34px;
+    background-color: #623932;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 41px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    color: #FFFFFF;
+    line-height: 23.7px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+article {
+    width: 100%;
+    padding: 70px 50px 70px 50px;
+    background-color: #6A7B98;
+    position: sticky;
+    
+
+}
+
+article h3 {
+    text-align: center;
+    margin-bottom: 150px;
+    font-size: 32px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+}
+
+.card1 {
+    width: 380px;
+    height: 455px;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    
+    
+}
+
+.sec {
+    margin-top: 90px;
+
+}
+
+.img2 {
+    width: 100%;
+    height: 75%;
+}
+
+.img2:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+.card1:hover {
+    box-shadow: 10px 20px 40px #000000;
+    transition: 0.5s ease;
+}
+
+article .img2 {
+    padding: 28px;
+}
+
+.cards h3 {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #82625D;
+    padding-top: 30px;
+
+}
+
+.footer1 {
+    width: 100%;
+    padding: 77px 100px 74px 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #C0BA8F; 
+    margin-top: -2px;    
+}
+
+footer ul li a{
+    display: flex;   
+     
+}
+
+.text-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DDDBCB;
+}
+
+.text-text span {
+    text-decoration-line: underline;
+}
+
+i {
+    color: #E3F6F6;
+   
+}
+
+.fabicons {
+    display: flex;
+    gap: 47px;
+    font-size: 30px;
+}
+
+.fa-facebook-messenger:hover {
+    transform: scale(2);
+    color: rgb(66, 78, 243);
+    transition: 0.5s ease;
+}
+
+.fa-instagram:hover {
+    transform: scale(2);
+    color: rgb(255, 0, 179);
+    transition: 0.5s ease;
+}
+
+.fa-youtube:hover {
+    transform: scale(2);
+    color: rgb(253, 3, 3);
+    transition: 0.5s ease;
+}
+
+@media (max-width: 733px){
+    .ul_navigation {
+        position: fixed;
+        top: 100px;
+        background-color: black;
+        width: 100%;
+        height: 150px;
+        left: -101%;
+        flex-direction: column;
+        gap: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ul_navigation > li > a {
+        font-size: 1.5rem;
+    }
+
+
+    .img2 {
+        display: none;
+    } 
+
+     .fa-bars {
+        display: block;
+    } 
+     .show {
+        left: 0;
+    }
+
+    header {
+        align-items: center;
+        height: 18.4%;
+    }
+    header > .img1 {
+        width: 100px;
+    }
+}
